@@ -1,0 +1,261 @@
+.navbar {
+    z-index: 2;
+
+    .navbar-brand {
+        font-family: 'Viga',
+            sans-serif;
+    }
+
+
+    .nav-item {
+        font-size: 1em;
+
+        .btn {
+            width: 100%;
+        }
+    }
+}
+
+.gambar {
+    background-image: url(../img/jumbotron-bg.jpg);
+    background-size: cover;
+    height: 540px;
+    text-align: center;
+    text-shadow: 3px 5px 4px rgba($color: #000000, $alpha: .6);
+
+
+    h1 {
+        color: white;
+        padding-top: 100px;
+        font-weight: 350;
+        text-align: center;
+        font-size: 52px;
+
+        span {
+            font-weight: 600;
+        }
+    }
+
+    .btn {
+        border-radius: 40px;
+    }
+
+    h1,
+    .btn {
+        position: relative;
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.gambar::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 98%;
+    position: absolute;
+    top: 0;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .7) 10%, rgba(253, 253, 253, .1)70%);
+}
+
+.panel {
+    position: relative;
+    z-index: 2;
+
+    .panel-card {
+        background-color: rgb(255, 255, 255);
+        margin-top: -90px;
+        border-radius: 15px;
+        padding: 20px 10px 0px 10px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+
+        .col-4 {
+            text-align: center;
+
+            img {
+                height: 70px;
+                margin: 0 10px 5px 0;
+            }
+
+            h4 {
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: 600;
+            }
+
+            p {
+                font-size: 12px;
+                color: rgb(105, 105, 105);
+                font-weight: 200;
+            }
+
+        }
+    }
+}
+
+.work-space {
+    margin-top: 90px;
+
+    .work-info {
+        h3 {
+            text-transform: uppercase;
+            font-size: 52px;
+            font-weight: 200;
+
+            span {
+                font-weight: 600;
+
+            }
+        }
+
+        p {
+            color: rgb(128, 128, 128);
+        }
+
+        .btn {
+            border-radius: 40px;
+            margin: auto;
+        }
+    }
+}
+
+.testimoni {
+    margin-top: 5em;
+    min-height: 300px;
+
+    h3 {
+        font-style: italic;
+        // text-align: center;
+    }
+
+    .gambar-testi {
+        img {
+            width: 50px;
+            opacity: .6;
+        }
+
+        img.main {
+            width: 90px;
+            opacity: 1;
+        }
+
+        h5 {
+            color: black;
+            // text-align: center;
+        }
+    }
+}
+
+.footer {
+    h6 {
+        color: rgb(136, 136, 136);
+    }
+}
+
+//  Break point
+@media (min-width: 992px) {
+    .navbar {
+        .navbar-brand {
+            color: white;
+            text-shadow: 3px 5px 4px rgba($color: #000000, $alpha: .6);
+
+        }
+
+        .nav-item {
+            text-transform: uppercase;
+            font-size: 1em;
+            margin-right: 10px;
+
+            .nav-link:hover::after {
+                content: "";
+                display: block;
+                border-bottom: 3px solid blue;
+                width: 50%;
+                margin: auto;
+                padding-bottom: 5px;
+                margin-bottom: -8px;
+            }
+
+            .nav-link {
+                color: white;
+                text-shadow: 3px 5px 4px rgba($color: #000000, $alpha: .6);
+
+            }
+
+            .btn {
+                border-radius: 40px;
+            }
+        }
+    }
+
+    .gambar {
+        background-image: url(../img/jumbotron-bg.jpg);
+        background-size: cover;
+        height: 640px;
+        margin-top: -75px;
+        text-align: center;
+        text-shadow: 3px 5px 4px rgba($color: #000000, $alpha: .6);
+
+        h1 {
+            color: white;
+            padding-top: 160px;
+            font-weight: 350;
+            text-align: center;
+            font-size: 62px;
+
+            span {
+                font-weight: 600;
+            }
+        }
+
+        .btn {
+            border-radius: 40px;
+            margin-top: 20px;
+        }
+
+    }
+
+    .panel {
+        position: relative;
+        z-index: 2;
+
+        .panel-card {
+            background-color: rgb(255, 255, 255);
+            margin-top: -70px;
+            border-radius: 15px;
+            padding: 20px 10px 0px 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+
+            .col-4 {
+                text-align: left;
+
+                img {
+                    height: 110px;
+                    margin: 0 10px 5px 0;
+                    float: left;
+                }
+
+                h4 {
+                    text-transform: uppercase;
+                    font-size: 24px;
+                    font-weight: 600;
+                }
+
+                p {
+                    font-size: medium;
+                    color: rgb(105, 105, 105);
+                    font-weight: 200;
+                }
+            }
+
+        }
+    }
+
+    .work-space {
+        margin-top: 120px;
+    }
+
+    .testimoni {
+        margin-top: 7em;
+    }
+}

@@ -1,0 +1,229 @@
+.navbar {
+  z-index: 2;
+}
+
+.navbar .navbar-brand {
+  font-family: 'Viga', sans-serif;
+}
+
+.navbar .nav-item {
+  font-size: 1em;
+}
+
+.navbar .nav-item .btn {
+  width: 100%;
+}
+
+.gambar {
+  background-image: url(../img/jumbotron-bg.jpg);
+  background-size: cover;
+  height: 540px;
+  text-align: center;
+  text-shadow: 3px 5px 4px rgba(0, 0, 0, 0.6);
+}
+
+.gambar h1 {
+  color: white;
+  padding-top: 100px;
+  font-weight: 350;
+  text-align: center;
+  font-size: 52px;
+}
+
+.gambar h1 span {
+  font-weight: 600;
+}
+
+.gambar .btn {
+  border-radius: 40px;
+}
+
+.gambar h1,
+.gambar .btn {
+  position: relative;
+  position: relative;
+  z-index: 1;
+}
+
+.gambar::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 98%;
+  position: absolute;
+  top: 0;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(10%, rgba(0, 0, 0, 0.7)), color-stop(70%, rgba(253, 253, 253, 0.1)));
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7) 10%, rgba(253, 253, 253, 0.1) 70%);
+}
+
+.panel {
+  position: relative;
+  z-index: 2;
+}
+
+.panel .panel-card {
+  background-color: white;
+  margin-top: -90px;
+  border-radius: 15px;
+  padding: 20px 10px 0px 10px;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+}
+
+.panel .panel-card .col-4 {
+  text-align: center;
+}
+
+.panel .panel-card .col-4 img {
+  height: 70px;
+  margin: 0 10px 5px 0;
+}
+
+.panel .panel-card .col-4 h4 {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.panel .panel-card .col-4 p {
+  font-size: 12px;
+  color: dimgray;
+  font-weight: 200;
+}
+
+.work-space {
+  margin-top: 90px;
+}
+
+.work-space .work-info h3 {
+  text-transform: uppercase;
+  font-size: 52px;
+  font-weight: 200;
+}
+
+.work-space .work-info h3 span {
+  font-weight: 600;
+}
+
+.work-space .work-info p {
+  color: gray;
+}
+
+.work-space .work-info .btn {
+  border-radius: 40px;
+  margin: auto;
+}
+
+.testimoni {
+  margin-top: 5em;
+  min-height: 300px;
+}
+
+.testimoni h3 {
+  font-style: italic;
+}
+
+.testimoni .gambar-testi img {
+  width: 50px;
+  opacity: .6;
+}
+
+.testimoni .gambar-testi img.main {
+  width: 90px;
+  opacity: 1;
+}
+
+.testimoni .gambar-testi h5 {
+  color: black;
+}
+
+.footer h6 {
+  color: #888888;
+}
+
+@media (min-width: 992px) {
+  .navbar .navbar-brand {
+    color: white;
+    text-shadow: 3px 5px 4px rgba(0, 0, 0, 0.6);
+  }
+  .navbar .nav-item {
+    text-transform: uppercase;
+    font-size: 1em;
+    margin-right: 10px;
+  }
+  .navbar .nav-item .nav-link:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid blue;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+  .navbar .nav-item .nav-link {
+    color: white;
+    text-shadow: 3px 5px 4px rgba(0, 0, 0, 0.6);
+  }
+  .navbar .nav-item .btn {
+    border-radius: 40px;
+  }
+  .gambar {
+    background-image: url(../img/jumbotron-bg.jpg);
+    background-size: cover;
+    height: 640px;
+    margin-top: -75px;
+    text-align: center;
+    text-shadow: 3px 5px 4px rgba(0, 0, 0, 0.6);
+  }
+  .gambar h1 {
+    color: white;
+    padding-top: 160px;
+    font-weight: 350;
+    text-align: center;
+    font-size: 62px;
+  }
+  .gambar h1 span {
+    font-weight: 600;
+  }
+  .gambar .btn {
+    border-radius: 40px;
+    margin-top: 20px;
+  }
+  .panel {
+    position: relative;
+    z-index: 2;
+  }
+  .panel .panel-card {
+    background-color: white;
+    margin-top: -70px;
+    border-radius: 15px;
+    padding: 20px 10px 0px 10px;
+    -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+  }
+  .panel .panel-card .col-4 {
+    text-align: left;
+  }
+  .panel .panel-card .col-4 img {
+    height: 110px;
+    margin: 0 10px 5px 0;
+    float: left;
+  }
+  .panel .panel-card .col-4 h4 {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .panel .panel-card .col-4 p {
+    font-size: medium;
+    color: dimgray;
+    font-weight: 200;
+  }
+  .work-space {
+    margin-top: 120px;
+  }
+  .testimoni {
+    margin-top: 7em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
